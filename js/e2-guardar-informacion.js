@@ -85,6 +85,29 @@ document.write('<br> Genero de la pelicula: ' + generoPelicula);
 document.write('<br> Duracion: ' + duracionPelicula);
 document.write('<br> Tiene premios: ' + premiosPelicula);
 
+document.write('<br>')
+document.write('<br>')
+
+//DECLARACION DE VARIABLES PARA EL EJERCICIO 3
+let tituloCancion = 'Anoana';
+let artista = 'Heilung';
+let album = 'Drif';
+let añoLanzamiento = 2022;
+let duracionCancion = 4.57;
+let videoclip = true;
+
+document.write('Titulo cancion: ' + tituloCancion);
+document.write('<br> Artista: ' + artista);
+document.write('<br> Album ' + album);
+document.write('<br> Año de lanzamiento: ' + añoLanzamiento);
+document.write('<br> Duracion: ' + duracionCancion);
+document.write('<br> Tiene videoclip: ' + videoclip);
+
+
+
+
+
+
 
 
 
