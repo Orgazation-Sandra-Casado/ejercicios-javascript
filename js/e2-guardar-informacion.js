@@ -48,6 +48,7 @@ document.write('La variable esta de noche es: ' + esDeNoche);
 document.write('<br>')
 document.write('<br>')
 
+//DECLARACION DE VARIABLES PARA EL EJERCICIO 1
 nombre = 'Sandra';
 let apellidos = 'Casado Aznar';
 let altura = 1.65;
@@ -65,6 +66,27 @@ document.write('<br> Me gusta la playa: ' + playa);
 document.write('<br> Me gusta la montaña: ' + montaña);
 document.write('<br> Me gusta el chocolate: ' + chocolate);
 document.write('<br> Tengo mascota: ' + mascota);
+
+document.write('<br>')
+document.write('<br>')
+
+//DECLARACION DE VARIABLES PARA EL EJERCICIO 2
+let tituloPelicula = 'Inglorious Basterds';
+let directorPelicula = 'Tarantino';
+let añoEstreno = 2009;
+let generoPelicula = 'Belico';
+let duracionPelicula = 153;
+let premiosPelicula = true;
+
+document.write('Titulo pelicula: ' + tituloPelicula);
+document.write('<br> Director de la pelicula: ' + directorPelicula);
+document.write('<br> Año de estreno: ' + añoEstreno);
+document.write('<br> Genero de la pelicula: ' + generoPelicula);
+document.write('<br> Duracion: ' + duracionPelicula);
+document.write('<br> Tiene premios: ' + premiosPelicula);
+
+
+
 
 
 
