@@ -45,3 +45,26 @@ document.write('<br>')
 document.write('La variable esta de noche es: ' + esDeNoche);
 
 
+document.write('<br>')
+document.write('<br>')
+
+nombre = 'Sandra';
+let apellidos = 'Casado Aznar';
+let altura = 1.65;
+let playa = true;
+let montaña = true;
+let chocolate = true;
+let mascota = true;
+
+document.write('Mi nombre es: ' + nombre);
+document.write('<br> Mis apellidos son: ' + apellidos);
+document.write('<br> Mi edad es: ' + edad);
+document.write('<br> Mi altura es: ' + altura);
+document.write('<br> Mi ciudad es: ' + ciudad);
+document.write('<br> Me gusta la playa: ' + playa);
+document.write('<br> Me gusta la montaña: ' + montaña);
+document.write('<br> Me gusta el chocolate: ' + chocolate);
+document.write('<br> Tengo mascota: ' + mascota);
+
+
+
