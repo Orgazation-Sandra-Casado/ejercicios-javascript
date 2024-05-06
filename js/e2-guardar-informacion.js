@@ -43,9 +43,16 @@ document.write('<br>Ejemplo 5. Iniciar la variable tipo boolean <br>');
 document.write('La variable esta soleado es: ' + estaSoleado);
 document.write('<br>')
 document.write('La variable esta de noche es: ' + esDeNoche);
+document.write('<br>')
 
-
-
+//CONSTANTES
+//SE USA PARA GUARDAR VALORES QUE NO CAMBIAN
+const NUMERODIASSEMANA = 7;
+document.write('La semana tiene: ' + NUMERODIASSEMANA + ' días');
+document.write('<br>')
+const PI = 3.14;
+document.write('La constante numero PI: ' + PI);
+document.write('<br>')
 
 
 
