@@ -84,6 +84,21 @@ document.write('<br> Año de estreno: ' + añoEstreno);
 document.write('<br> Genero de la pelicula: ' + generoPelicula);
 document.write('<br> Duracion: ' + duracionPelicula);
 document.write('<br> Tiene premios: ' + premiosPelicula);
+document.write('<br>');
+
+tituloPelicula = 'Interstellar';
+directorPelicula = 'Christopher Nolan';
+añoEstreno =2014;
+generoPelicula= 'Ficcion';
+duracionPelicula= 169;
+premiosPelicula = true;
+
+document.write('Titulo pelicula: ' + tituloPelicula);
+document.write('<br> Director de la pelicula: ' + directorPelicula);
+document.write('<br> Año de estreno: ' + añoEstreno);
+document.write('<br> Genero de la pelicula: ' + generoPelicula);
+document.write('<br> Duracion: ' + duracionPelicula);
+document.write('<br> Tiene premios: ' + premiosPelicula);
 
 document.write('<br>')
 document.write('<br>')
