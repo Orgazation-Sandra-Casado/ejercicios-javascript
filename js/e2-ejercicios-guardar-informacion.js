@@ -70,3 +70,30 @@ document.write('<br> Album ' + album);
 document.write('<br> Año de lanzamiento: ' + añoLanzamiento);
 document.write('<br> Duracion: ' + duracionCancion);
 document.write('<br> Tiene videoclip: ' + videoclip);
+
+document.write('<br>')
+document.write('<br>')
+
+//CONSTANTES. EJERCICIO 7
+const NUMEROMESESAÑO = 12;
+const NUMERODIASSEMANA = 7;
+let numHabitantes = 700000;
+let edadCantante = 50;
+const ESTACIONAÑO = 4;
+let ciudadVivo = 'Zaragoza';
+const NUMEROHORAS = 24;
+let precioGasolina = 1.70;
+let numLibros = 100;
+
+document.write('El año tiene ' + NUMEROMESESAÑO + ' meses<br>');
+document.write('La semana tiene ' + NUMERODIASSEMANA + ' días<br>');
+document.write('Numero habitantes ciudad ' + numHabitantes + '<br>');
+document.write('Edad cantante ' + edadCantante + '<br>');
+document.write('Estaciones del año ' + ESTACIONAÑO + '<br>');
+document.write('Ciudad donde vivo ' + ciudadVivo + '<br>');
+document.write('El día tiene ' + NUMEROHORAS + ' horas<br>');
+document.write('Precio gasolina ' + precioGasolina + '<br>');
+document.write('Numero libros leidos ' + numLibros + '<br>');
+
+
+
