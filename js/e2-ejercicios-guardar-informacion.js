@@ -76,7 +76,7 @@ document.write('<br>')
 
 //CONSTANTES. EJERCICIO 7
 const NUMEROMESESAÑO = 12;
-const NUMERODIASSEMANA = 7;
+const NUMERODIASDELASEMANA = 7;
 let numHabitantes = 700000;
 let edadCantante = 50;
 const ESTACIONAÑO = 4;
@@ -86,7 +86,7 @@ let precioGasolina = 1.70;
 let numLibros = 100;
 
 document.write('El año tiene ' + NUMEROMESESAÑO + ' meses<br>');
-document.write('La semana tiene ' + NUMERODIASSEMANA + ' días<br>');
+document.write('La semana tiene ' + NUMERODIASDELASEMANA + ' días<br>');
 document.write('Numero habitantes ciudad ' + numHabitantes + '<br>');
 document.write('Edad cantante ' + edadCantante + '<br>');
 document.write('Estaciones del año ' + ESTACIONAÑO + '<br>');
