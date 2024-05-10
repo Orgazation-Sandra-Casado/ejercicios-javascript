@@ -60,6 +60,20 @@ document.write('<br>Ejercicio 6 <br>');
 let baseTrapecio1 = 6;
 let baseTrapecio2 = 10;
 let alturaTrapecio = 8;
-let areaTrapecio = alturaTrapecio * ((baseTrapecio1 + baseTrapecio2)/2);
+let areaTrapecio = alturaTrapecio * ((baseTrapecio1 + baseTrapecio2) / 2);
 document.write('El area del trapecio es: ' + areaTrapecio);
 
+//Area de un rombo con diagonales de longitudes 12 y 16
+let diagonal1 = 12;
+let diagonal2 = 16;
+let areaRombo = (diagonal1 * diagonal2) / 2;
+document.write('El area del rombo es ' + areaRombo);
+
+//Area de un pentagono regular con lado 6 cm
+let apotemaPentagono = 4.13;
+let ladoPentagono = 6;
+let areaPentagono;
+let perimetroPentagono = (5 * ladoPentagono);
+
+areaPentagono = (perimetroPentagono * apotemaPentagono) / 2;
+document.write('El area del pentagono es ' + areaPentagono);
