@@ -125,13 +125,39 @@
                 <option value="Barcelona">Ciudad Barcelona</option>
                 <option value=""></option>
             </select>
-        <button type="button" class="btn btn-success" onclick="mostrarUbicacion()">Mostrar ubicacion</button>
-        <p id="e4solucion"></p>
+            <button type="button" class="btn btn-success" onclick="mostrarUbicacion()">Mostrar ubicacion</button>
+            <p id="e4solucion"></p>
 
     </div>
 
     <div id="contenidoEjercicios" class="container mt-5">
         <h2>Ejercicios</h2>
+        <h4>Ejercicio 1: Crea un formulario para introducir nombre, ciudad y fecha de nacimiento. </h4>
+        <div id="ejercio1Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej1Nombre" placeholder="Introduce tu nombre" required minlength="1"
+                    maxlength="40" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El nombre es obligatorio y debe tener entre 1 y 40 caracteres</p>
+
+            </div>
+            <div class="mb-3">
+                <input type="text" id="ej1Ciudad" placeholder="Introduce tu ciudad" required minlength="1"
+                    maxlength="40" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El nombre de la ciudad es obligatorio y debe tener entre 1 y 40 caracteres
+                </p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ej1Fecha" placeholder="Introduce el año de nacimiento" required min="1900" max="2024"
+                    class="form-control">
+                <p class="valid-feedback">La fecha es correcta</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="wellcome()">Enter</button>
+        </div>
+        <p id="respuesta1"></p>
+
 
     </div>
 
