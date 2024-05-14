@@ -149,8 +149,8 @@
                 </p>
             </div>
             <div class="mb-3">
-                <input type="number" id="ej1Fecha" placeholder="Introduce el año de nacimiento" required min="1900" max="2024"
-                    class="form-control">
+                <input type="number" id="ej1Fecha" placeholder="Introduce el año de nacimiento" required min="1900"
+                    max="2024" class="form-control">
                 <p class="valid-feedback">La fecha es correcta</p>
                 <p class="invalid-feedback">El campo es obligatorio</p>
             </div>
@@ -158,6 +158,42 @@
         </div>
         <p id="respuesta1"></p>
 
+        <h4>Ejercicio 2: Crea un formulario para </h4>
+        <div id="e2formulario" class="was-validated">
+
+            <div class="mb-3">
+                <input type="number" id="numero1" placeholder="Primer número" required pattern="control">
+                <p class="valid-feedback">Campo numérico es correcto</p>
+                <p class="invalid-feedback">El campo número es obligatorio y debe tener dos carácteres obligatorios</p>
+            </div>
+            <!-- la expresión regular \d+ significa que el campo debe contener uno o más dígitos numéricos.
+            Si el valor ingresado por el usuario no coincide con este patrón, se mostrará un mensaje de error de
+            validación. -->
+            <div class="mb-3">
+                <input type="number" id="numero2" placeholder="Segundo número" required pattern="form-control">
+                <p class="valid-feedback">Campo numérico es correcto</p>
+                <p class="invalid-feedback">El campo número es obligatorio y debe tener dos carácteres obligatorios</p>
+            </div>
+
+            <p>2. Agrega un boton que al hacer click llame a una función que muestre un mensaje con el resultado de la
+                suma, la resta, la multiplicación y la división de esos dos números.
+            </p>
+            <button type="button" onclick="calcularOperaciones()" class="btn btn-primary">Calcular</button>
+
+        </div>
+        <p id="e2resultadOperaciones"></p>
+
+        <h4>Crea un formulario para convertir monedas. El usuario debe
+            introducir una cantidad en euros.
+        </h4>
+        <div class="mb-3">
+            <input type="number" id="ex3number" required min="0" class="form-control" />
+            <p class="valid-feedback">El número introducido es correcto</p>
+            <p class="invalid-feedback">Debe introducir un número positivo</p>
+        </div>
+        <button type="button" class="btn btn-info" onclick="convertidorMonedas()">Conversión</button>
+        <p id="ex3solucion"></p>
+        <h3>
 
     </div>
 
