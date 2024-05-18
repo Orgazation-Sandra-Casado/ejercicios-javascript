@@ -85,10 +85,43 @@ cadenas = document.getElementById('e2minuscula');
 cadenas.innerText = 'La frase en minusculas es ' + frase2Minuscula;
 
 cadenas = document.getElementById('e2segundoNombre');
-cadenas.innerText = 'La frase con nuevo nombre es ' + cambioNombre; 
+cadenas.innerText = 'La frase con nuevo nombre es ' + cambioNombre;
 
 cadenas = document.getElementById('e2sinNombre');
 cadenas.innerText = 'La frase sin nombre es ' + sinNombre;
+
+//Ejercicio 3. Crea una variable con tu nombre completo y muestralo por pantalla. Luego quita los espacios. 
+let nombreCompleto = 'Sandra Casado Aznar';
+let nombreSinEspacios = nombreCompleto.replaceAll(' ', '');
+
+let e3Nombre = document.getElementById('e3nombreSinEspacios');
+e3Nombre.innerText = 'Mi nombre es ' + nombreCompleto + ' y sin espacios es ' + nombreSinEspacios;
+
+//Ejercicio 4
+//Crea una variable con una palabra en minuscula y muestralo por pantalla. Cambia la primera letra a mayuscula y muestrala por pantalla.
+let e4Minuscula = 'bosque';
+let e4Primera = e4Minuscula[0];
+let primeraMayuscula = e4Primera.toUpperCase();
+let nuevaCadena4 = e4Minuscula.replace(e4Primera, primeraMayuscula);
+
+let e4Pantalla = document.getElementById('e4Minuscula');
+e4Pantalla.innerText = 'La palabra es ' + e4Minuscula;
+
+let e4PrimeraMayuscula = document.getElementById('e4Primera');
+e4PrimeraMayuscula.innerText = 'La palabra es ' + nuevaCadena4;
+
+//Ejercicio 5
+//Crea una cadena con el texto Hola Mundo y muestralo por pantalla. Reemplaza la palabra Hola por Adios y muestralo por pantalla.
+let e5Hola = 'Hola mundo';
+let e5Despedida = e5Hola.replace('Hola', 'Adios');
+let e5Pantalla = document.getElementById('e5hola');
+e5Pantalla.innerText = 'Texto original ' + e5Hola + ' Texto nuevo ' + e5Despedida;
+
+
+
+
+
+
 
 
 
