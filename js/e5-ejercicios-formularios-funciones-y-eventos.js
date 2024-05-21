@@ -28,12 +28,23 @@ function calcularOperaciones() {
 }
 
 //Ejercicio 3
-function convertidorMonedas(){
+function convertidorMonedas() {
     let moneda = parseFloat(document.getElementById("ex3number").value);
     let dolar = 1.8;
     let euro = 0.86;
     let multiplicar1 = moneda * dolar;
     let multiplicar2 = moneda * euro;
-    let mensaje = "La conversión de " + moneda + " Euros " + "equivale a  " + multiplicar1 + " Dólares " + "y " +  multiplicar2 + " Libras. ";
+    let mensaje = "La conversión de " + moneda + " Euros " + "equivale a  " + multiplicar1 + " Dólares " + "y " + multiplicar2 + " Libras. ";
     imprimir(mensaje, "ex3solucion");
+}
+
+//Ejercicio 4
+function precioTotal() {
+    let nombreProducto = document.getElementById('nombreProducto').value;
+    let precioProducto = document.getElementById('precioProducto').value;
+    let cantidadProducto = document.getElementById('cantidadProducto').value;
+
+    let resultado = cantidadProducto * precioProducto;
+    let mensaje = 'El producto ' + nombreProducto + ' tiene un precio total de ' + resultado;
+    imprimir(mensaje, 'precioTotal');
 }
