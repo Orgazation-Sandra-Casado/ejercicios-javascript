@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript desde 0 con Ejercicios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="p-5 bg-dark text-white text-center">
+        <h1>Bootcamp QA: Condicionales</h1>
+        <p><a
+                href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals">Condicionales</a>
+        </p>
+    </div>
+    <br>
+
+    <div id="ejemplosCondicionales" class="container mt-5">
+        <h3>Ejemplo 1: Condicionales if / else</h3>
+        <p>Comprobar si un valor es igual a otro</p>
+        <form id="ejemplo1Condicionales" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej1numero" placeholder="Introduce un numero" required class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo numero es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="numeroEsCinco()">Enviar</button>
+        </form>
+        <p id="ej1resultado"></p>
+
+        <h3>Ejemplo 2: Condicionales if / else</h3>
+        <p>Comprobar si un valor es mayor o igual a otro</p>
+        <form id="ejemplo2Condicionales" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej2numero" placeholder="Introduce un numero" required class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo numero es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="numeroMayorCinco()">Enviar</button>
+        </form>
+        <p id="ej2resultado"></p>
+
+        <h3>Ejemplo 3: Condicionales if / else</h3>
+        <p>Comparar texto</p>
+        <form id="ejemplo3Condicionales" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej3texto" placeholder="Introduce una ciudad" required class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo numero es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="ciudadEsZaragoza()">Enviar</button>
+        </form>
+        <p id="ej3resultado"></p>
+
+        <h3>Ejemplo 4: Condicionales if else</h3>
+        <form id="ejemplo4Condicionales" class="was-validated">
+            <p>Validar formulario</p>
+            <div class="mb-3">
+                <input type="text" id="e4animal" placeholder="Introduce un animal" required minlength="4" maxlength="10"
+                    class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El nombre del animal debe tener entre 4 y 10 caracteres. </p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarNombreDelAnimal()">Enviar</button>
+        </form>
+        <p id="ej4resultado"></p>
+
+        <h3>Ejemplo 5: Condicionales multiples if / else</h3>
+        <form id="ejemplo5Condicionales" class="was-validated">
+            <p>Mostrar precio segun producto elegido</p>
+            <div class="mb-3">
+                <select id="ej5productos">
+                    <option value="camiseta">Camiseta</option>
+                    <option value="pantalon">Pantalon</option>
+                    <option value="chaqueta">Chaqueta</option>
+                    <option value="gorra">Gorra</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarPrecio()">Enviar</button>
+        </form>
+        <p id="ej5resultado"></p>
+
+        <h3>Ejemplo 6: Condicionales if / else anidados</h3>
+        <form id="ejemplo6Condicionales" class="was-validated">
+            <p>Paris tiene descuento 100 euros si se va mas de 10 dias </p>
+            <div class="mb-3">
+                <select id="ej6destino">
+                    <option value="paris">Paris 10 euros/dia</option>
+                    <option value="irlanda">Irlanda 20 euros/dia</option>
+                    <option value="escocia">Escocia 30 euros/dia</option>
+                    <option value="finlandia">Finlandia 40 euros/dia</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <input type="number" id="e6numerodias" placeholder="Numero de dias" required min="1"
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Debes irte al menos 1 dia </p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarPrecioViaje()">Enviar</button>
+        </form>
+        <p id="ej6resultado"></p>
+
+
+
+    </div>
+
+    <script src="js/e6-condicionales.js"></script>
+</body>
+
+</html>
