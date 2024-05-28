@@ -20,16 +20,39 @@
     <div id="ejerciciosArrays" class="container mt-5">
         <h3>Ejemplo 1. Crear un array y mostrarlo</h3>
         <p>Mostrar una lista de la compra</p>
-        <button type="button" class="btn btn-success" onclick="mostrarLista()">Ver</button>
         <p id="e1listaresultado"></p>
+        <button type="button" class="btn btn-success" onclick="mostrarLista()">Ver</button>
 
         <h3>Ejemplo 2. Mostrar primero, ultimo y longitud array</h3>
         <p>Mostrar una lista de la compra</p>
         <button type="button" class="btn btn-success" onclick="mostrarInfoLista()">Ver</button>
         <p id="e2listainfo"></p>
+
+        <h3>Ejemplo 3. Cambiar array</h3>
+        <p>Modificar valor de un elemento de la lista</p>
+        <form id="e3formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="e3posicion" placeholder="Introduce la posicion del elemento a modificar"
+                    required min="1" max="7" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo obligatorio entre 1 y 6</p>
+            </div>
+
+            <div class="mb-3">
+                <input type="text" id="e3nuevovalor" placeholder="Introduce el valor nuevo" required
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo obligatorio</p>
+            </div>
+
+            <button type="button" class="btn btn-success" onclick="modificarLista()">Ver</button>
+        </form>
+
+
+
     </div>
-    
-    
+
+
 
     <script src="js/e7-arrays.js"></script>
 </body>
