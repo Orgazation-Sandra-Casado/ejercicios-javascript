@@ -106,7 +106,86 @@
         </form>
         <p id="ej6resultado"></p>
 
+        <h3>Ejemplo 7: Condicionales operador logico AND &&</h3>
+        <p>Muesttra si el usuario entra gratis al museo o no. Menor de 16 años y ser de Malaga</p>
+        <form id="ejemplo7Condicionales" class="was-validated">
+            <div class="mb-3">
+                <select id="ej7ciudad" required>
+                    <option value="paris">Paris</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="malaga">Malaga</option>
+                    <option value="sevilla">Sevilla</option>
+                </select>
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Ciudad obligatoria</p>
+            </div>
 
+            <div class="mb-3">
+                <input type="number" id="e7edad" placeholder="Introduce tu edad" required min="1" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Debes tener mas de 1 año de edad</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="entradaMuseoGratis()">Enviar</button>
+        </form>
+        <p id="ej7resultado"></p>
+
+        <h3>Ejemplo 8: Condicionales operador logico OR ||</h3>
+        <p>Muesttra si el usuario entra gratis al museo o no. Menor de 16 años o ser de Malaga</p>
+        <form id="ejemplo8Condicionales" class="was-validated">
+            <div class="mb-3">
+                <select id="ej8ciudad" required>
+                    <option value="paris">Paris</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="malaga">Malaga</option>
+                    <option value="sevilla">Sevilla</option>
+                </select>
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Ciudad obligatoria</p>
+            </div>
+
+            <div class="mb-3">
+                <input type="number" id="e8edad" placeholder="Introduce tu edad" required min="1" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Debes tener mas de 1 año de edad</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="entradaMuseoORGratis()">Enviar</button>
+        </form>
+        <p id="ej8resultado"></p>
+
+        <h3>Ejemplo 9: Condicionales operador logico NOT !</h3>
+        <p>Muestra si el usuario entra gratis al museo o no. Solo pueden entrar gratis quienes no sean de Malaga con menos de 16 años</p>
+        <form id="ejemplo9Condicionales" class="was-validated">
+            <div class="mb-3">
+                <select id="ej9ciudad" required>
+                    <option value="paris">Paris</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="malaga">Malaga</option>
+                    <option value="sevilla">Sevilla</option>
+                </select>
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Ciudad obligatoria</p>
+            </div>
+
+            <div class="mb-3">
+                <input type="number" id="e9edad" placeholder="Introduce tu edad" required min="1" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Debes tener mas de 1 año de edad</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="entradaNOTMuseoGratis()">Enviar</button>
+        </form>
+        <p id="ej9resultado"></p>
+
+        <h3>Ejemplo 10: Condicionales Switch</h3>
+        <p>El usuario debe elegir su mes de nacimiento y mostrará su horoscopo</p>
+        <form id="ejemplo10Condicionales" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="e10mes" placeholder="Introduce tu mes" required min="1" max="12" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">Introducir un mes entre 1 y 12</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarHoroscopoSwitch()">Enviar</button>
+        </form>
+        <p id="ej10resultado"></p>
 
     </div>
 

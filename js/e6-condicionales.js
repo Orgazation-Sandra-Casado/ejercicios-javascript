@@ -120,3 +120,101 @@ function mostrarPrecioViaje() {
 
     imprimir(mensaje, 'ej6resultado');
 }
+
+//Ejemplo 7. Operador lógico AND &&
+function entradaMuseoGratis() {
+    let ciudad = document.getElementById('ej7ciudad').value;
+    let edad = parseInt(document.getElementById('e7edad').value);
+    let mensaje = '';
+
+    if (ciudad === 'malaga' && edad <= 16) {
+        mensaje = 'Entrada gratis';
+    }
+    else {
+        mensaje = 'No tiene entrada gratis';
+    }
+    imprimir(mensaje, 'ej7resultado');
+}
+
+//Ejemplo 8. Operador lógico OR ||
+function entradaMuseoORGratis() {
+    let ciudad = document.getElementById('ej8ciudad').value;
+    let edad = parseInt(document.getElementById('e8edad').value);
+    let mensaje = '';
+
+    if (ciudad === 'malaga' || edad <= 16) {
+        mensaje = 'Entrada gratis';
+    }
+    else {
+        mensaje = 'No tiene entrada gratis';
+    }
+    imprimir(mensaje, 'ej8resultado');
+}
+
+//Ejemplo 9. Operador lógico NOT !
+function entradaNOTMuseoGratis() {
+    let ciudad = document.getElementById('ej9ciudad').value;
+    let edad = parseInt(document.getElementById('e9edad').value);
+    let mensaje = '';
+    if (!(ciudad === 'malaga' && edad < 16)) {
+        mensaje = 'Entrada gratis';
+    }
+    else {
+        mensaje = 'No tiene entrada gratis';
+    }
+    imprimir(mensaje, 'ej9resultado');
+}
+
+//Ejemplo 10. Switch
+function mostrarHoroscopo() {
+    let mesNacimiento = parseInt(document.getElementById('e10mes').value);
+    let mensaje = '';
+
+    if (mesNacimiento === 1) {
+        mensaje = 'Capricornio';
+    }
+    else if (mesNacimiento === 2) {
+        mensaje = 'Acuario';
+    }
+    else if (mesNacimiento === 3) {
+        mensaje = 'Aries';
+    } else if (mesNacimiento === 4) {
+        mensaje = 'Geminis';
+    }
+    else if (mesNacimiento === 5) {
+        mensaje = 'Sagitario';
+    } else if (mesNacimiento === 6) {
+        mensaje = 'Tauro';
+    } else {
+        mensaje = 'Cualquiera';
+    }
+    imprimir(mensaje, 'ej10resultado');
+}
+//Con switch tarda menos en ejecutarse el código
+function mostrarHoroscopoSwitch() {
+    let mesNacimiento = parseInt(document.getElementById('e10mes').value);
+    let mensaje = '';
+    let horoscopo = '';
+
+    switch (mesNacimiento) {
+        case 1:
+            horoscopo = 'Capricornio';
+            break;
+        case 2:
+            horoscopo = 'Acuario';
+            break;
+        case 3:
+            horoscopo = 'Geminis';
+            break;
+        case 4:
+            horoscopo = 'Sagitario';
+            break;
+        case 5:
+            horoscopo = 'Tauro';
+            break;
+        default:
+            horoscopo = 'Cualquiera';
+    }
+    mensaje = 'El horoscopo es '+ horoscopo;
+    imprimir(mensaje, 'ej10resultado');
+}
