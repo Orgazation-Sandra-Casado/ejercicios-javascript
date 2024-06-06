@@ -18,6 +18,7 @@
     <br>
 
     <div id="ejerciciosArrays" class="container mt-5">
+
         <h3>Ejemplo 1. Crear un array y mostrarlo</h3>
         <p>Mostrar una lista de la compra</p>
         <p id="e1listaresultado"></p>
@@ -48,10 +49,49 @@
             <button type="button" class="btn btn-success" onclick="modificarLista()">Ver</button>
         </form>
 
+        <h3>Ejemplo 4. Agregar elementos al final de la lista</h3>
+        <form id="e4formularioelementolista" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="e4elementonuevolista" placeholder="Introduce el articulo nuevo" required
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo obligatorio</p>
+            </div>
 
+            <button type="button" class="btn btn-success" onclick="agregarAlista()">Agregar</button>
+        </form>
+
+        <h3>Ejemplo 5. Eliminar elementos al final de la lista</h3>
+        <button type="button" class="btn btn-success" onclick="eliminarUltimoElemento()">Eliminar</button>
+        <p id="e5elementoEliminado">El campo obligatorio</p>
+
+        <h3>Ejemplo 6. Eliminar elementos concretos de la lista</h3>
+        <form id="e6formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="e6posicion" placeholder="Introduce la posicion del elemento a eliminar"
+                    required min="1" max="7" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo obligatorio entre 1 y 6</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="eliminarPosicionElegida()">Eliminar</button>
+        </form>
+
+        <h3>Ejemplo 7. Ordenar elementos por orden alfabetico ASSCI</h3>
+        <button type="button" class="btn btn-success" onclick="ordenarLista()">Ordenar</button>
+
+        <h3>Ejemplo 8. Obtener posicion de un elemento de la lista</h3>
+        <form id="e8formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="e8elementoabuscar" placeholder="Introduce el texto del elemento"
+                    required min="1" max="7" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="verPosicionElemento()">Ver posicion</button>
+        </form>
+        <p id="e8resultado"></p>
 
     </div>
-
 
 
     <script src="js/e7-arrays.js"></script>
