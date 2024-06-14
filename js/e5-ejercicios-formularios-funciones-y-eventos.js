@@ -48,3 +48,27 @@ function precioTotal() {
     let mensaje = 'El producto ' + nombreProducto + ' tiene un precio total de ' + resultado;
     imprimir(mensaje, 'precioTotal');
 }
+
+//Ejercicio 5
+function datosCamiseta() {
+    let tallaCamiseta = document.getElementById('eje5TallaCamiseta').value;
+    let colorCamiseta = document.getElementById('eje5ColorCamiseta').value;
+
+    let mensaje = 'La camiseta es ' + tallaCamiseta + ' y color ' + colorCamiseta;
+    imprimir(mensaje, 'eje5FormulariosResultado');
+}
+
+//Ejercicio 6: Formulario para mostrar la edad en dias, horas y minutos
+function calcularEdad() {
+    let edad = parseInt(document.getElementById('ej46Edad').value);
+    const diasAnyo = 365;
+    const horasDia = 24;
+    const minutosHora = 60;
+    const segundosHora = 60;
+
+    let dias = edad * diasAnyo;
+    let min = dias * horasDia * minutosHora;
+    let seg = min * segundosHora;
+    let mensaje = 'Si tienes ' + edad + ' son Dias: ' + dias + ' Minutos: ' + min + ' Segundos: ' + seg;
+    imprimir(mensaje, 'ex6resultado');
+}

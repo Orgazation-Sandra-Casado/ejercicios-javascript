@@ -118,7 +118,7 @@
         <input type="number" id="e3numero2" placeholder="Agrega un numero a restar">
         <button type="button" class="btn btn-success" onclick="restar()">Restar</button>
         <p id="funcionesEjemplo3"></p>
-        
+
         <h3>Ejemplo 4: Obtener informacion de un select y usarlo en una funcion</h4>
             <p>Elige una ciudad:</p>
             <select id="e4ciudades" class="form-select">
@@ -222,6 +222,49 @@
             <button type="button" class="btn btn-primary" onclick="precioTotal()">Calcular</button>
             <p id="precioTotal" class="mt-3"></p>
         </form>
+
+        <h4>Ejercicio 5: Crea un formulario para elegir la talla y el color de la camiseta</h4>
+
+        <form id="ejercicio5Formularios" class="was-validated">
+            <div class="mb-3">
+                <label for="eje5TallaCamiseta">Talla Camiseta</label>
+                <select id="eje5TallaCamiseta" class="form-select" style="max-width: 150px;" required>
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="eje5ColorCamiseta">Color Camiseta</label>
+                <select id="eje5ColorCamiseta" class="form-select" style="max-width: 150px;" required>
+                    <option value="blanco">Blanco</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                    <option value="negro">Negro</option>
+                </select>
+            </div>
+            <button type="button" id="eje5Boton" class="btn btn-primary" onclick="datosCamiseta()">Datos Camiseta</button>
+        </form>
+        <p id="eje5FormulariosResultado"></p>
+
+        <h4>Ejercicio 6: Formulario para mostrar la edad en dias, horas y minutos</h4>
+
+        <div id="ejercio6Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej46Edad" placeholder="Introduce tu edad" required min="1"
+                    class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">La edad es obligatoria y debe ser positiva </p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="calcularEdad()">Edad</button>
+        </div>
+        <p id="ex6resultado"></p>
+
 
 
     </div>
