@@ -153,7 +153,8 @@
         <p id="ej8resultado"></p>
 
         <h3>Ejemplo 9: Condicionales operador logico NOT !</h3>
-        <p>Muestra si el usuario entra gratis al museo o no. Solo pueden entrar gratis quienes no sean de Malaga con menos de 16 años</p>
+        <p>Muestra si el usuario entra gratis al museo o no. Solo pueden entrar gratis quienes no sean de Malaga con
+            menos de 16 años</p>
         <form id="ejemplo9Condicionales" class="was-validated">
             <div class="mb-3">
                 <select id="ej9ciudad" required>
@@ -179,7 +180,8 @@
         <p>El usuario debe elegir su mes de nacimiento y mostrará su horoscopo</p>
         <form id="ejemplo10Condicionales" class="was-validated">
             <div class="mb-3">
-                <input type="number" id="e10mes" placeholder="Introduce tu mes" required min="1" max="12" class="form-control">
+                <input type="number" id="e10mes" placeholder="Introduce tu mes" required min="1" max="12"
+                    class="form-control">
                 <p class="valid-feedback">Correcto</p>
                 <p class="invalid-feedback">Introducir un mes entre 1 y 12</p>
             </div>
@@ -187,9 +189,47 @@
         </form>
         <p id="ej10resultado"></p>
 
+        <div id="ejerciciosCondicionales" class="container mt-5">
+
+            <h3>Ejercicio 1: Formulario comprobar si es mayor de edad </h3>
+            <form class="was-validated">
+                <div class="mb-3">
+                    <input type="number" id="ex1number" placeholder="Introduce tu edad" required min="1"
+                        class="form-control" />
+                    <p class="valid-feedback">La edad introducida es correcta</p>
+                    <p class="invalid-feedback">La edad es obligatoria y debe ser positiva</p>
+                </div>
+                <button type="button" class="btn btn-success" onclick="calcularEdad()">Edad</button>
+            </form>
+            <p id="ex1resultado"></p>
+
+            <h3>Ejercicio 2: Formulario para ver cual es el mayor de dos numeros </h3>
+            <form id="ej2Condicionales" class="was-validated">
+                <div class="mb-3">
+                    <input type="number" id="ej2Numero" placeholder="Introduce un numero" required step="0.01"
+                        class="form-control">
+                    <p class="valid-feedback">Correcto</p>
+                    <p class="invalid-feedback">Campo vacio</p>
+                </div>
+                <div class="mb-3">
+                    <input type="number" id="ej2Numer" placeholder="Introduce un numero" required step="0.01"
+                        class="form-control">
+                    <p class="valid-feedback">Correcto</p>
+                    <p class="invalid-feedback">Campo vacio</p>
+                </div>
+                <button type="button" class="btn btn-success" onclick="cualMayor()">Enviar</button>
+            </form>
+            <p id="ej2Mayor"></p>
+
+
+
+        </div>
+
     </div>
 
     <script src="js/e6-condicionales.js"></script>
+    <script src="js/e6-ejercicios-condicionales.js"></script>
+
 </body>
 
 </html>
