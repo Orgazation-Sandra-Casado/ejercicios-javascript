@@ -17,7 +17,7 @@
     </div>
     <br>
 
-    <div id="ejerciciosArrays" class="container mt-5">
+    <div id="ejemplosArrays" class="container mt-5">
 
         <h3>Ejemplo 1. Crear un array y mostrarlo</h3>
         <p>Mostrar una lista de la compra</p>
@@ -82,8 +82,8 @@
         <h3>Ejemplo 8. Obtener posicion de un elemento de la lista</h3>
         <form id="e8formulario" class="was-validated">
             <div class="mb-3">
-                <input type="text" id="e8elementoabuscar" placeholder="Introduce el texto del elemento"
-                    required min="1" max="7" class="form-control">
+                <input type="text" id="e8elementoabuscar" placeholder="Introduce el texto del elemento" required min="1"
+                    max="7" class="form-control">
                 <p class="valid-feedback">Correcto</p>
                 <p class="invalid-feedback">El campo obligatorio</p>
             </div>
@@ -93,8 +93,71 @@
 
     </div>
 
+    <div id="ejerciciosArrays" class="container mt-5">
+
+        <h3>Ejercicio 1: Mostrar lista de Alumnos</h3>
+        <p>Lista de Alumnos</p>
+        <button type="button" class="btn btn-success" onclick="mostrarListado()">Mostrar Lista de Alumnos</button>
+        <p id="listado1alumnos"></p>
+
+        <h3>Ejercicio 2: Muestra el nombre del alumno en la posicion que elijas</h3>
+        <form id="ej2formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="ej2posicion" placeholder="Introduce la posicion" min="0" required
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="posicionLista()">Posición</button>
+        </form>
+        <div id="ej2resultado"></div>
+
+        <h3>Ejercicio 3: Muestra la lista de alumnos ordenada</h3>
+        <button type="button" class="btn btn-success" onclick="alumnosOrdenados()">Mostrar alumnos ordenados</button>
+        <p id="ej3ordenados"></p>
+
+        <h3>Ejercicio 4: Agrega una nueva opcion para agregar un nuevo alumno.</h3>
+        <form id="ejercicio4Formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ej4nombre" placeholder="Introduce el nombre que quieres agregar" required>
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="agregarAlumno()">Agregar Alumno</button>
+        </form>
+        <p id="e4resultado"></p>
+
+        <h3>Ejercicio 5: Eliminar un alumno</h3>
+        <form id="ejer5formulario" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="e5posicionelegida"
+                    placeholder="Introduce la posicion del elemento que quieres eliminar" required min="1" max="500"
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio y debe tener un valor entre 1 y 500</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="elegirEliminarPosicion()">Eliminar</button>
+        </form>
+        <p id="ejer5resultadoeliminar"></p>
+
+        <h3>Ejercicio 6: Buscar un alumno</h3>
+        <form id="ejer6formulario" class="was-validated">
+            <div class="mb-3">
+                <label for="buscar">Nombre del Alumno a buscar</label>
+                <input type="text" id="buscar" required pattern="[a-zA-Z\s]+" class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="buscarAlumno()">Buscar Alumno</button>
+        </form>
+        <p id="ex6resultado"></p>
+
+    </div>
+
 
     <script src="js/e7-arrays.js"></script>
+    <script src="js/e7-ejercicios-arrays.js"></script>
+
 </body>
 
 </html>
