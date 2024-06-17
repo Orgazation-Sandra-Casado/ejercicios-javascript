@@ -81,25 +81,28 @@ function nombresConA() {
 }
 
 //Ejercicio 6
-let listaNotas = [];
-function agregarNota() {
-    let nota = parseFloat(document.getElementById('ex6agregar').value);
+let listaNotas = new Array;
+
+function agregarNota(){
+    let nota = parseFloat(document.getElementById("ex6agregar").value);
     listaNotas.push(nota);
-    imprimir(listaNotas, 'ex6resultadoagreganota');
+    imprimir(listaNotas, "ex6resultadoagreganota");
 }
 
-function sumaTotal() {
+
+
+function sumaTotal(){
     let suma = 0;
     let mensaje3;
-    for (let i = 0; i < listaNotas.length; i++) {
+    for(let i = 0; i<listaNotas.length; i++){
         let notas = listaNotas[i];
         suma = notas + suma;
     }
-    if (suma !== 0) {
+    if (suma !== 0){
         mensaje3 = " La suma total es " + suma;
     }
-    else {
-        mensaje3 = " No hay nota introducidas el resultado es " + suma;
+    else{
+        mensaje3= " No hay nota introducidas el resultado es " + suma;
     }
     imprimir(mensaje3, "ex6sumatotal");
 
@@ -107,25 +110,25 @@ function sumaTotal() {
 }
 
 
-function notaMedia() {
+function notaMedia(){
     let suma = sumaTotal();
     let notaMedia = 0;
-    if (listaNotas.length > 0) {
+    if (listaNotas.length>0) {
         notaMedia = suma / listaNotas.length;
     }
-
+    
     let mensaje4 = "La nota media es " + notaMedia;
     imprimir(mensaje4, "ex6notamedia");
     return notaMedia;
 }
 
-function mostrarNota() {
+function mostrarNota(){
     let mensaje5;
     let nota = notaMedia();
-    if (nota < 5) {
+    if (nota < 5){
         mensaje5 = " Tu nota final es " + nota + " lo que corresponde a suspenso";
     }
-    else {
+    else{
         mensaje5 = " Tu nota final es " + nota + " lo que corresponde a un aprobado";
     }
     imprimir(mensaje5, "ex6mostrarnota");
