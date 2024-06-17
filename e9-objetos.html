@@ -75,12 +75,42 @@
             </div>
             <button type="button" class="btn btn-success" onclick="agregarNuevaMascota()">Agregar Nueva Mascota</button>
         </form>
-        <p id="e5objetos"></p>        
+        <p id="e5objetos"></p>
+
+    </div>
+
+    <div id="ejerciciosObjetos" class="container mt-5">
+        <h3>Ejercicio 1: Crear objeto viaje</h3>
+        <button type="button" class="btn btn-success" onclick="mostrarViaje()">Mostrar Viaje</button>
+        <p id="ex1resultado"></p>
+
+        <h3>Ejercicio 2: Cambiar propiedades del viaje</h3>
+        <form class="was-validated">
+            <div class="mb-3">
+                <label for="viajecito">qué quieres cambiar:</label>
+                <select id="propiedadViaje" class="form-select" style="max-width: 150px;">
+                    <option value="destino">destino</option>
+                    <option value="precio">precio</option>
+                    <option value="duracion">duracion</option>
+                    <option value="cuidades">cuidades</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <input type="text" id="nuevoValor" placeholder="nuevo valor" required>
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">El valor es obligatorio</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="cambiarpropiedadViaje()">Poner propiedad</button>
+        </form>
 
     </div>
 
 
     <script src="js/e9-objetos.js"></script>
+    <script src="js/e9-ejercicios-objetos.js"></script>
+
+
 </body>
 
 </html>
