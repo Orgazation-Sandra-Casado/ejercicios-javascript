@@ -61,13 +61,100 @@
         <button type="button" class="btn btn-success" onclick="buscarEnLista()">Buscar numero</button>
         <p id="e5solucion"></p>
 
+    </div>
 
+    <div id="ejerciciosBucles" class="container mt-5">
+        <h3>Ejercicio 1: Suma de todos los numeros desde el 1 hasta el introducido por el usuario</h3>
+        <form class="was-validated">
+            <input type="number" id="e1suma" placeholder="Introduce un numero" required min="1" class="form-control">
+            <p class="valid-feedback">Correcto</p>
+            <p class="invalid-feedback">Campo obligatorio</p>
+            <button type="button" class="btn btn-success" onclick="mostrarSuma()">Mostrar suma</button>
+        </form>
+        <p id="ex1solucion"></p>
+
+        <h3>Ejercicio 2: Muestra la palabra introducida por el usuario</h3>
+        <form class="was-validated">
+            <input type="text" id="e2palabra" placeholder="Introduce la palabra" required class="form-control">
+            <p class="valid-feedback">Correcto</p>
+            <p class="invalid-feedback">Campo obligatorio</p>
+            <input type="number" id="e2numero" placeholder="Introduce un numero" required min="1" class="form-control">
+            <p class="valid-feedback">Correcto</p>
+            <p class="invalid-feedback">Campo obligatorio</p>
+            <button type="button" class="btn btn-success" onclick="mostrarRepeticion()">Mostrar repeticion</button>
+        </form>
+        <p id="ex2solucion"></p>
+
+        <h3>Ejercicio 3: Mostrar la palabra MARGARITA o AMAPOLA el numero de veces introducido por el usuario segun si
+            la palabra empieza por vocal o no</h3>
+        <form class="was-validated">
+            <div class="mb-3">
+                <input type="text" id="ex3palabra" placeholder="Introduce una palabra" required pattern="[a-zA-Z\s]+"
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio</p>
+            </div>
+            <div class="mb-3">
+                <input type="number" id="ex3numerorepeticion"
+                    placeholder="Introduce un número de veces que quieras repetir MARGARITA o AMAPOLA" required min="1"
+                    class="form-control">
+                <p class="valid-feedback">Correcto</p>
+                <p class="invalid-feedback">El campo es obligatorio y debe tener un valor mayor a 0</p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="eleccionPalabra()">Mostrar Palabras</button>
+        </form>
+        <p id="e3resultado"></p>
+
+        <h3>Ejercicio 4: Muestra todos los numeros pares desde el 0 hasta el indicado por el usuario.</h3>
+
+        <form id="ejer4bucles" class="was-validated">
+            <div class="mb-3">
+                <input type="number" id="numeroPar" placeholder="Introduce un número" required min="1"
+                    class="form-control">
+                <p class="valid-feedback">correcto</p>
+                <p class="invalid-feedback">Introduce un número. </p>
+            </div>
+            <button type="button" class="btn btn-success" onclick="mostrarPares()">Mostrar numeros</button>
+        </form>
+        <p id="e4buclesresultado"></p>
+
+        <h3>Ejercicio 5: Lista en mayuscula</h3>
+        <div class="was-validated">
+            <input type="text" id="ex4nombre" placeholder="Escribe un nombre" required pattern="[a-zA-Z\s]+"
+                minlength="3" class="form-control">
+            <p class="valid-feedback">Correcto</p>
+            <p class="invalid-feedback">El campo es obligatorio</p>
+        </div>
+        <button type="button" class="btn btn-success" onclick="nuevoNombre()">Añadir Nombre</button>
+        <p id="ex5nuevonombre"></p>
+        <button type="button" class="btn btn-success" onclick="listaMayusculas()">Mostrar Lista en Mayúsculas</button>
+        <p id="ex5listamayusculas"></p>
+        <button type="button" class="btn btn-success" onclick="nombresConA()">Mostrar Lista Nombres con inicial
+            "A"</button>
+        <p id="ex5resultado"></p>
+
+        <h3>Ejercicio 6: Calcular notas</h3>
+        <div class="was-validated">
+            <input type="number" id="ex6agregar" placeholder="Introduce un número" required min="1" max="10"
+                pattern="^(?!0$).+" step="0.001" class="form-control">
+            <p class="valid-feedback">Correcto</p>
+            <p class="invalid-feedback">El campo es obligatorio y debe tener un valor mayor a 0</p>
+        </div>
+        <button type="button" class="btn btn-success" onclick="agregarNota()">Agregar Nota a la lista</button>
+        <p id="ex6resultadoagreganota"></p>
+        <button type="button" class="btn btn-success" onclick="sumaTotal()">Suma</button>
+        <p id="ex6sumatotal"></p>
+        <button type="button" class="btn btn-success" onclick="notaMedia()">Nota Media</button>
+        <p id="ex6notamedia"></p>
+        <button type="button" class="btn btn-success" onclick="mostrarNota()">Mostrar Nota Final</button>
+        <p id="ex6mostrarnota"></p>
 
 
     </div>
 
-
     <script src="js/e8-bucles.js"></script>
+    <script src="js/e8-ejercicios-bucles.js"></script>
+
 </body>
 
 </html>
